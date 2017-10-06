@@ -3,7 +3,7 @@ FROM plexinc/pms-docker:plexpass
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y python3 git build-essential libargtable2-dev autoconf automake libtool \
-    libtool-bin ffmpeg libsdl1.2-dev libavutil-dev libavformat-dev libavcodec-dev vim mkvtoolnix && \
+    libtool-bin ffmpeg libsdl1.2-dev libavutil-dev libavformat-dev libavcodec-dev vim mkvtoolnix ssmtp && \
     
 # Clone Comskip
     cd /opt && \
